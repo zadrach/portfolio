@@ -11,7 +11,7 @@ import './MenuBar.css'; // Import the menu bar styles
 
 function App() {
   return (
-    <Router basename="/repo-name">
+    <Router basename="/porftolio">
       <div>
         {/* Load Google Font */}
         <GoogleFontLoader fonts={[{ font: 'Ultra', weights: [400, 700] }]} />
