@@ -11,7 +11,7 @@ import './MenuBar.css'; // Import the menu bar styles
 
 function App() {
   return (
-    <Router>
+    <Router basename="/repo-name">
       <div>
         {/* Load Google Font */}
         <GoogleFontLoader fonts={[{ font: 'Ultra', weights: [400, 700] }]} />
@@ -38,8 +38,6 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-
-
         </Routes>
       </div>
     </Router>
