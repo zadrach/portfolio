@@ -15,7 +15,7 @@ function Home() {
           </p>
           <div className="image">
             <img
-              src="./uploads/home.jpg"
+              src={process.env.PUBLIC_URL + '/uploads/home.jpg'}
               alt="pic1"
             />
           </div>
