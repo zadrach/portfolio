@@ -29,6 +29,7 @@
   font-size: 2em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .self-title:hover {

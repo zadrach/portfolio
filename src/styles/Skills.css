@@ -6,7 +6,12 @@
   margin-top: auto;
   
 }
-
+.sec-name {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: normal;
+letter-spacing: 2px;
+cursor: pointer;
+}
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -72,6 +77,8 @@
   transition: transform 0.5s ease-in-out;
   transform: translateY(-10px); /* Adjust the value as desired */
 }
+.sec-name:hover {
+  color: rgb(26, 233, 188);}
 
 @media (max-width: 768px) {
   /* Adjust the styles for smaller screens (phones) */

@@ -4,9 +4,14 @@ import './styles/Skills.css';
 function Skills() {
   return (
     <div className="background-skills">
+
       <div className="skills-container">
+      <h1 className="sec-name">SKILLS</h1>
+
         <div className="skills">
+
           <div className="skills-wrapper">
+
             <div className="skill">
               <img className="skill-image" src={process.env.PUBLIC_URL + '/uploads/file-type-html.svg'} alt="" />
               <p className="skill-name">HTML</p>

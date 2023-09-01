@@ -10,6 +10,9 @@ function Contact() {
   };
 
   return (
+    <>
+    
+
     <div className="contact-card">
       <h2 className="contact-title">Contact Me</h2>
       <div className="contact-info">
@@ -39,6 +42,8 @@ function Contact() {
         Email Me
       </button>
     </div>
+    </>
+
   )
 }
 
