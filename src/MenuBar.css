@@ -3,7 +3,7 @@
 .menu {
   background-color: #333;
   padding: 1px;
-  font-family: 'Ultra', sans-serif; /* Apply the 'Ultra' font */
+  letter-spacing: 1.5px;
 
 }
 
@@ -13,12 +13,14 @@
   padding: 0;
   display: flex;
 
+
 }
 
 .menu ul li {
   margin-right: 20px;
   display: flex;
   align-items: center;
+
 }
 
 .menu ul li:last-child {
@@ -31,6 +33,7 @@
   font-size: 16px;
   margin-left: 20px;
   transition: color 0.3s ease-in-out;
+
 }
 
 .menu ul li a:hover {

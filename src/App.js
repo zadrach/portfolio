@@ -4,6 +4,7 @@ import Home from './Home';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
+/* import Certificate from './Certificate'; */
 import GoogleFontLoader from 'react-google-font-loader';
 
 import './styles/Home.css';
@@ -27,6 +28,7 @@ function App() {
             <li>
               <Link to="/projects">Projects</Link>
             </li>
+            
             <li>
               <Link to="/contact">Contact</Link>
             </li>
@@ -37,6 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
+
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
