@@ -30,10 +30,10 @@ function Contact() {
         <a href="https://www.linkedin.com/in/zadrach-caunca-ba2435217/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
-        <a href="https://github.com/zadrach" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/zadpo" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="mailto:zadrach@example.com">
+        <a href="mailto:zadrachcaunca777@gmail.com.com">
           <FontAwesomeIcon icon={faGoogle} />
         </a>
       </div>
