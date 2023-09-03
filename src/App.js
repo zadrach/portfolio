@@ -3,8 +3,7 @@ import GoogleFontLoader from 'react-google-font-loader';
 import Home from './Home';
 import Skills from './Skills';
 import Projects from './Projects';
-import Contact from './Contact';
-
+import About from './About';
 import './styles/Home.css';
 import './MenuBar.css';
 
@@ -25,8 +24,12 @@ function App() {
           <li>
             <a href="#projects">Projects</a>
           </li>
+          
+        
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </li>
+          <li>
           </li>
         </ul>
       </nav>
@@ -41,8 +44,8 @@ function App() {
         <section id="projects">
           <Projects />
         </section>
-        <section id="contact">
-          <Contact />
+        <section id="about">
+          <About />
         </section>
       </div>
     </div>

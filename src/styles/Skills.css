@@ -7,10 +7,9 @@
   
 }
 .sec-name {
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: normal;
-letter-spacing: 2px;
-cursor: pointer;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
 }
 .skills-container {
   display: flex;
@@ -91,7 +90,7 @@ cursor: pointer;
   /* For the skills section */
   .skills-container {
     text-align: center;
-    margin-top: -12rem;
+    margin-top: -8rem;
   }
   .skills {
     display: flex;

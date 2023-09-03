@@ -6,7 +6,7 @@ function Skills() {
     <div className="background-skills">
 
       <div className="skills-container">
-      <h1 className="sec-name">SKILLS</h1>
+      <h1 className="sec-name">Skills</h1>
 
         <div className="skills">
 
