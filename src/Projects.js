@@ -57,7 +57,7 @@ function Project() {
 
       {/* Part-time Card 3 */}
       <div className="project-card">
-        <h2 className="project-title">The Net.com</h2>
+        <h2 className="project-title">The Net.Com</h2>
         <p className="project-description">
           Cashier - 1 year (2018)
         </p>
