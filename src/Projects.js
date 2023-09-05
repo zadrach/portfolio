@@ -35,6 +35,33 @@ function Project() {
           </ul>
         </div>
       </div>
+
+      {/* Part-time Section */}
+      <h1 className="sec-name-p">Part-time</h1>
+
+      {/* Part-time Card 1 */}
+      <div className="project-card">
+        <h2 className="project-title">Swiss Chalet</h2>
+        <p className="project-description">
+          Customer Service - 6 months (2022)
+        </p>
+      </div>
+
+      {/* Part-time Card 2 */}
+      <div className="project-card">
+        <h2 className="project-title">Pizza Hut</h2>
+        <p className="project-description">
+          Customer Service - 6 months (2023)
+        </p>
+      </div>
+
+      {/* Part-time Card 3 */}
+      <div className="project-card">
+        <h2 className="project-title">The Net.com</h2>
+        <p className="project-description">
+          Cashier - 1 year (2018)
+        </p>
+      </div>
     </div>
   );
 }

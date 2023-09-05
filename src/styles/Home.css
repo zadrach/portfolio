@@ -64,6 +64,25 @@
 
 /* Media query for screens up to 768px width (typical phone screens) */
 @media (max-width: 768px) {
+  .self-description {
+    font-size: 1rem;
+    color: #295751;
+    line-height: 1.5;
+    letter-spacing: 0rem;
+    max-width: 300px;
+    margin: 0 auto;
+    font-weight: lighter;
+    animation: typing 1s steps(40) forwards; /* Add typing animation */
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0; /* Start with no width (hidden text) */
+    }
+    100% {
+      width: 100%; /* End with full width (fully revealed text) */
+    }
+  }
   
   .self-title {
     font-size: 24px;
