@@ -79,6 +79,27 @@
  /* background-color: #050505; Darker blue on hover */
 }
 
+.floating-image {
+  position: absolute; /* Use absolute positioning */
+  bottom: -1900px; 
+  right: 200px; /* Adjust the horizontal position from the right edge */
+  transform: translateY(-50%); /* Center vertically */
+  width: auto; /* Adjust the width as needed */
+  max-height: 80vh; /* Limit the image height */
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px); /* Adjust the bounce height as needed */
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .project-container {
     padding: 10px;
