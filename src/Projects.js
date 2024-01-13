@@ -1,89 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles/Projects.css'; // Import your CSS file
+import work_data from './workData';
+import ProjectLink from './ProjectLink';
 
 function Project() {
+  const [projects, setProjects] = useState([]);
+
+
+  useEffect(() => {
+    setProjects(work_data.projects);
+  }, []);
+
+  
   return (
     <div className="project-container">
       <div className="left-section">
-        <h1 className="sec-name-p">Projects</h1>
+        <h1 className="sec-name-p">Work</h1>
 
-        {/* Project Card 1 */}
-        <div className="project-card">
-          <h2 className="project-title">Cathay Industrial</h2>
-          <p className="project-description">
-            A website for Cathay Industrial. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div className="project-link">
-            <ul>
-              <li className="arrow-link">
-                <ProjectLink url="https://cathayindustrial.com" />
-              </li>
-            </ul>
+        {projects.map(project => (
+          <div key={project.id} className="project-card">
+            <h2 className="project-title">{project.name}</h2>
+            <p className="project-description">{project.description}</p>
+            <div className="project-link">
+              <ul>
+                <li className="arrow-link">
+                  <ProjectLink url={project.url} />
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        {/* Project Card 2 */}
-        <div className="project-card">
-          <h2 className="project-title">2H Trading Shop</h2>
-          <p className="project-description">
-            An e-commerce website for 2H Trading Shop. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div className="project-link">
-            <ul>
-              <li className="arrow-link">
-                <ProjectLink url="https://2htrading.shop" />
-              </li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className="right-section">
         {/* Part-time Section */}
-        <h1 className="sec-name-p">Part-time</h1>
-
-        {/* Part-time Card 1 */}
-        <div className="project-card">
-          <h2 className="project-title">Swiss Chalet</h2>
-          <p className="project-description">
-            Customer Service - 6 months (2022)
-          </p>
-        </div>
-
-        {/* Part-time Card 2 */}
-        <div className="project-card">
-          <h2 className="project-title">Pizza Hut</h2>
-          <p className="project-description">
-            Customer Service - 6 months (2023)
-          </p>
-        </div>
-
-        {/* Part-time Card 3 */}
-        <div className="project-card">
-          <h2 className="project-title">The Net.Com</h2>
-          <p className="project-description">
-            Cashier - 1 year (2018)
-          </p>
-        </div>
+        <h1 className="sec-name-p">Projects</h1>
+        {projects.map(project => (
+          <div key={project.id} className="project-card">
+            <h2 className="project-title">{project.name}</h2>
+            <p className="project-description">{project.description}</p>
+            <div className="project-link">
+              <ul>
+                <li className="arrow-link">
+                  <ProjectLink url={project.url} />
+                </li>
+              </ul>
+            </div>
+          </div>
+        ))}
+        
       </div>
-
-     {/*  
-      <img
-        src={process.env.PUBLIC_URL + '/uploads/p.jpg'}
-        alt="Floating Image"
-        className="floating-image"
-      /> */}
     </div>
   );
 }
 
-// Reusable ProjectLink Component
-function ProjectLink({ url }) {
-  return (
-    <a href={url} target="_blank" rel="noopener noreferrer" className="project-link">
-      Visit the project
-    </a>
-  );
-}
+
 
 export default Project;
