@@ -27,11 +27,11 @@ function About() {
         <div className="contact-info">
           <h2 className="contact-title">Contact Me</h2>
           <div className="contact-item">
-            <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+            {/* <FontAwesomeIcon icon={faPhone} className="contact-icon" /> */}
             <p>+62 9129862812</p>
           </div>
           <div className="contact-item">
-            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+            {/* <FontAwesomeIcon icon={faEnvelope} className="contact-icon" /> */}
             <p>zadrachcaunca777@gmail.com</p>
           </div>
           <div className="contact-links">
