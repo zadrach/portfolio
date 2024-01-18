@@ -1,95 +1,100 @@
 /* About.css */
 
 .about-container {
-    display: flex;
-    flex-direction: column; /* Stack sections on small screens */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack sections on small screens */
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #f5f5f5; */
+}
+.about-content {
+  margin: 0 auto;
+}
+
+.about-content ul {
+  list-style: none; /* Remove default list bullets */
+  padding-left: 20px; /* Add some left padding for the list */
+}
+
+.about-content ul li {
+  position: relative; /* Position the pseudo-element relative to the list item */
+  padding-left: 30px; /* Create space for the arrow */
+  margin-bottom: 10px;
+}
+
+.about-content ul li::before {
+  content: "\2192"; /* Unicode arrow character (right arrow) */
+  position: absolute;
+  left: 0;
+  color: #070707; /* Arrow color */
+  font-size: 14px; /* Adjust the arrow size as needed */
+  line-height: 1; /* Center the arrow vertically */
+  transition: color 0.3s ease; /* Add a transition effect for hover */
+}
+
+.about-content ul li:hover::before {
+  color: #ff6600; /* Change arrow color on hover */
+}
+
+.contact-info {
+  padding-left: 20px;
+  margin-left: 55rem; /* Reset the margin for small screens */
+}
+
+.contact-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  color: #007bff; /* Blue color for icons */
+}
+
+.contact-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.contact-links a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Media Query for Small Screens (e.g., Phones) */
+@media screen and (max-width: 767px) {
+  .about-container {
+    padding: 0; /* Remove padding for small screens */
   }
 
-  .about-content ul {
-    list-style: none; /* Remove default list bullets */
-    padding-left: 20px; /* Add some left padding for the list */
-  }
-  
-  .about-content ul li {
-    position: relative; /* Position the pseudo-element relative to the list item */
-    padding-left: 30px; /* Create space for the arrow */
-    margin-bottom: 10px;
-  }
-  
-  .about-content ul li::before {
-    content: "\2192"; /* Unicode arrow character (right arrow) */
-    position: absolute;
-    left: 0;
-    color: #070707; /* Arrow color */
-    font-size: 14px; /* Adjust the arrow size as needed */
-    line-height: 1; /* Center the arrow vertically */
-    transition: color 0.3s ease; /* Add a transition effect for hover */
-  }
-  
-  .about-content ul li:hover::before {
-    color: #ff6600; /* Change arrow color on hover */
-  }
-
+  .about-content,
   .contact-info {
-    padding-left: 20px;
-    margin-left: 55rem; /* Reset the margin for small screens */
+    padding: 10px; /* Add smaller padding for small screens */
+    margin-left: 1rem;
   }
 
-  .contact-title {
-    font-size: 24px;
-    color: #333;
-  }
-
-  .contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-  }
-
-  .contact-icon {
-    margin-right: 10px;
-    color: #007bff; /* Blue color for icons */
-  }
-
-  .contact-links {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    align-items: flex-start;
+  .about-content h2 {
+    font-size: 20px; /* Decrease font size for small screens */
   }
 
   .contact-links a {
-    font-size: 24px;
-    color: #333;
-    text-decoration: none;
+    font-size: 20px; /* Decrease font size for small screens */
   }
-
-  .contact-links a:hover {
-    color: #007bff; /* Change color on hover */
-  }
-
-  /* Media Query for Small Screens (e.g., Phones) */
-  @media screen and (max-width: 767px) {
-    .about-container {
-      padding: 0; /* Remove padding for small screens */
-    }
-
-    .about-content,
-    .contact-info {
-      padding: 10px; /* Add smaller padding for small screens */
-      margin-left: 1rem;
-    }
-
-    .about-content h2 {
-      font-size: 20px; /* Decrease font size for small screens */
-    }
-
-    .contact-links a {
-      font-size: 20px; /* Decrease font size for small screens */
-    }
-  }
+}

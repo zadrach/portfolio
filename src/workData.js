@@ -2,16 +2,17 @@ const work_data = {
   projects: [
     {
       id: 1,
-      name: "Cathay Industrial",
+      name: "Cathay Industrial Inc.",
       description:
-        "A website for Cathay Industrial. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Crafted for Cathay Industrial, this website embodies sophistication and functionality. Immerse your audience in a seamless online experience. Elevate your brand with compelling content and intuitive design, curated to resonate with modern aesthetics and industry standards.",
       url: "https://cathayindustrial.com",
+      logo: "/img/logo2.png",
     },
     {
       id: 2,
-      name: "2H Trading Shop",
+      name: "2H Trading Medical Supply",
       description:
-        "An e-commerce website for 2H Trading Shop. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "This project involved the development of a robust and secure e-commerce platform tailored for 2H Trading Shop, specializing in medical supplies. Leveraging PHP as the primary backend scripting language, the website offers a seamless and user-friendly experience for customers seeking essential medical products.",
       url: "https://2htrading.shop",
     },
   ],
@@ -28,6 +29,7 @@ const work_data = {
         "fix frontend-related issues.",
       ],
       url: "https://media-meter.com/",
+      logo: "/img/logo1.png",
     },
   ],
 };
