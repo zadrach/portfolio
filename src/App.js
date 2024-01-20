@@ -6,6 +6,8 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import About from "./About";
 import "./MenuBar.css";
+import { Divider } from "antd";
+// import PhotoGallery from "./PhotoGallery";
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -46,6 +48,11 @@ function App() {
               About
             </a>
           </li>
+          {/* <li>
+            <a href="#photogallery" onClick={toggleMenu}>
+              My Photo Gallery
+            </a>
+          </li> */}
         </ul>
       </nav>
 
@@ -62,6 +69,9 @@ function App() {
         <section id="about">
           <About />
         </section>
+        {/* <section id="photogallery">
+          <PhotoGallery />
+        </section> */}
         <footer>
           <div className="footer-container">
             {/* Footer content goes here */}
@@ -72,6 +82,7 @@ function App() {
                   horizon.”
                 </span>
                 – Dr. Christopher Dayagdag
+                <Divider orientation="center"></Divider>
               </p>
             </div>
           </div>

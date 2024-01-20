@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles/About.css"; // Import your CSS file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
   faGithub,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
+import ContactForm from "./ContactForm";
 
 function About() {
   return (
@@ -71,6 +71,7 @@ function About() {
               <FontAwesomeIcon icon={faGoogle} />
             </a>
           </div>
+          {/* <ContactForm /> */}
         </div>
       </div>
     </div>

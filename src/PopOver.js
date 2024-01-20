@@ -16,6 +16,7 @@ const PopOver = ({ profilePicSrc }) => {
         >
           <img
             className="rounded-full w-[120px] h-[120px] mb-2 cursor-pointer"
+            alt="popup"
             src={profilePicSrc}
             onMouseEnter={() => setPopoverOpen(true)}
             onMouseLeave={() => setPopoverOpen(false)}
@@ -32,7 +33,7 @@ const PopOver = ({ profilePicSrc }) => {
                   <img
                     className="flex-shrink-0 inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800"
                     src={profilePicSrc}
-                    alt="Image Description"
+                    alt="profilePic"
                   />
                   <div className="grow">
                     <h4 className="font-semibold text-sm text-black">

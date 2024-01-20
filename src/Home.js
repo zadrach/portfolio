@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles/Home.css";
 // import Modal from "./Modal";
 import PopOver from "./PopOver";
